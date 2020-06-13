@@ -10,3 +10,9 @@ Ambiente gráfico de planificación basado en STRIP y HTN
 ## Frontend
 * Vue.js
 * Bootstrap
+
+## Prerrequisitos
+* NPM
+* MongoDB
+* Python>=3.7
+
