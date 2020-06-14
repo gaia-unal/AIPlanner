@@ -16,3 +16,34 @@ Ambiente gráfico de planificación basado en STRIP y HTN
 * MongoDB
 * Python>=3.7
 
+### Backend
+Ejecutamos el siguiente comando dentro de la carpeta `backend` para instalar las dependencias:
+
+`pip install -r requirements.txt`
+
+### Frontend
+
+Ejecutamos el siguiente comandod entro de la carpeta `frontend` para instalar las dependencias:
+
+`npm install`
+
+Ajustaremos las variables de entorno para el backend. Copiamos el contenido del archivo `.env.example` dentro del archivo `.env` que tambien quedará ubicado en la carpeta `backend`
+
+
+```
+TOKEN_KEY=
+MONGODB_URI=
+DB_NAME=
+DB_COLLECTION=
+PORT=
+```
+
+A continuación hay una breve explicación de estas variables y el valor que deberían tomar:
+
+| Variable      | Descripción                                                                                            |
+|---------------|--------------------------------------------------------------------------------------------------------|
+| TOKEN_KEY     | Cadena aleatoria que servirá para generar la firma del token JWT                                       |
+| MONGODB_URI   | Cadena para la conexión a MongoDB en formato URI. El valor por defecto es `mongodb://localhost:27017/` |
+| DB_NAME       | Nombre de la DB en MongoDB                                                                             |
+| DB_COLLECTION | Nombre de la colección de la DB en MongoDB                                                             |
+| PORT          | Puerto en el correrá el backend el valor por defecto es `8000`                                                                      |
