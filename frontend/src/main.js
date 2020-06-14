@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
 
 Vue.config.productionTip = false
+Vue.http.options.root = process.env.VUE_APP_BASE_URL_API
 Vue.use(VueResource)
 Vue.use(Vuelidate)
 
