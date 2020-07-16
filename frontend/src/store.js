@@ -51,7 +51,7 @@ export default new Vuex.Store({
   },
   actions: {
     signup ({ commit }, authData) {
-      Vue.http.post('/auth/sign-up', authData)
+      Vue.http.post('auth/sign-up', authData)
         .then(response => {
           const data = response.body
           // console.log(data)
@@ -68,7 +68,7 @@ export default new Vuex.Store({
         })
     },
     login ({ commit }, authData) {
-      Vue.http.post('/auth/login', authData)
+      Vue.http.post('auth/login', authData)
         .then(response => {
           const data = response.body
           // console.log(data)
@@ -86,7 +86,7 @@ export default new Vuex.Store({
     },
     changeData ({ commit, state }, userData) {
       commit('clearError')
-      Vue.http.put('/user', userData, {
+      Vue.http.put('user', userData, {
         headers: {
           'Authorization': 'Bearer ' + state.token
         }
@@ -116,7 +116,7 @@ export default new Vuex.Store({
       }
     },
     sendStripProblem ({ state }, userData) {
-      Vue.http.post('/user/strip/problem', userData, {
+      Vue.http.post('user/strip/problem', userData, {
         headers: {
           'Authorization': 'Bearer ' + state.token
         }
@@ -129,7 +129,7 @@ export default new Vuex.Store({
         })
     },
     sendHtnProblem ({ state }, userData) {
-      Vue.http.post('/user/htn/problem', userData, {
+      Vue.http.post('user/htn/problem', userData, {
         headers: {
           'Authorization': 'Bearer ' + state.token
         }
@@ -142,7 +142,7 @@ export default new Vuex.Store({
         })
     },
     getProblems ({ commit, state }) {
-      Vue.http.get('/user/problems', {
+      Vue.http.get('user/problems', {
         headers: {
           'Authorization': 'Bearer ' + state.token
         }
@@ -155,7 +155,7 @@ export default new Vuex.Store({
         })
     },
     deleteProblem ({ dispatch, state }, userData) {
-      Vue.http.delete(`/user/${userData.type}/problem/${userData.key}`, {
+      Vue.http.delete(`user/${userData.type}/problem/${userData.key}`, {
         headers: {
           'Authorization': 'Bearer ' + state.token
         }
