@@ -10,7 +10,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <router-link v-if="auth" to="/dashboard" tag="li" class="nav-item"><a class="nav-link">Tablero</a></router-link>
-            <router-link to="/strip" tag="li" class="nav-item"><a class="nav-link">STRIP</a></router-link>
+            <router-link to="/strip" tag="li" class="nav-item"><a class="nav-link">STRIPS</a></router-link>
             <router-link to="/htn" tag="li" class="nav-item"><a class="nav-link">HTN</a></router-link>
             <router-link to="/about" tag="li" class="nav-item"><a class="nav-link">Acerca de</a></router-link>
           </ul>

@@ -2,7 +2,7 @@
   <div style="margin-top:80px">
     <div class="row">
       <div class="col-md-6">
-        <h2>STRIP</h2>
+        <h2>STRIPS</h2>
           <ul class="list-group" v-for="(problem, key) in problems.strip" :key="problem.id">
             <li class="list-group-item list-group-item-action">
               <div class="row">
