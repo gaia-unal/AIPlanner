@@ -1,6 +1,6 @@
 <template>
   <div class="text-center">
-    <p class="h1 text-secondary" style="margin-top:200px">Ambiente gráfico de planificación basado en STRIP y HTN</p>
+    <p class="h1 text-secondary" style="margin-top:200px">Ambiente gráfico de planificación basado en STRIPS y HTN</p>
     <button class="btn btn-success btn-lg mt-3" @click="goToLogin">Regístrate</button>
   </div>
 </template>
